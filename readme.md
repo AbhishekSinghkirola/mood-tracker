@@ -12,10 +12,11 @@ Mood Tracker is a simple web application that allows users to log their daily mo
 - User-friendly interface for seamless mood tracking.
 
 ## Screenshots
+![ss](https://github.com/user-attachments/assets/e8f8e5b0-10ee-4b25-a82b-3ce7f0aee89c)
 
 ## Deployment Link
 
-[Live Demo](https://yourdeploymentlink.com)
+[Live Demo](https://mood-tracker-abhishek.netlify.app/)
 
 ## Installation
 
