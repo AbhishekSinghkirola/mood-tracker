@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker</title>
+
+    <!-- -------------------------------- Fonts -------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ----------------------------- FontAwesome ----------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ----------------------------- Swiper CSS ------------------------------ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- ----------------------------- Custom CSS ------------------------------ -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>What's Your Today Mood.</h1>
+
+      <section class="emoji-container">
+        <img
+          class="emoji today-mood"
+          src="./images/happy.webp"
+          alt="Happy Face Emoji"
+        />
+        <img class="emoji" src="./images/sad.webp" alt="Sad Face Emoji" />
+        <img
+          class="emoji"
+          src="./images/neutral.webp"
+          alt="Neutral Face Emoji"
+        />
+        <img
+          class="emoji"
+          src="./images/excited.png"
+          alt="excited Face Emoji"
+        />
+      </section>
+
+      <button type="button" class="update-emoji-btn">Update</button>
+    </section>
+
+    <section class="emoji-history">
+      <div class="emoji-history-header">
+        <h2>Emoji History</h2>
+        <div class="options-container">
+          <div class="timeline-options">
+            <button type="button" class="active" id="day-tab">Day</button>
+            <button type="button" id="week-tab">Week</button>
+            <button type="button" id="month-tab">Month</button>
+          </div>
+
+          <div class="view-options">
+            <button type="button">
+              <i class="fa-solid fa-timeline"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="emoji-history-view">
+        <div class="day-view view show-view" id="day-view">
+          <div class="swiper-container">
+            <p class="swiper-control">
+              <button type="button" class="btn btn-default btn-sm prev-slide">
+                Prev
+              </button>
+              <button type="button" class="btn btn-default btn-sm next-slide">
+                Next
+              </button>
+            </p>
+            <div class="swiper-wrapper timeline"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="week-view view" id="week-view">
+          <div class="swiper-container">
+            <p class="swiper-control">
+              <button type="button" class="btn btn-default btn-sm prev-slide">
+                Prev
+              </button>
+              <button type="button" class="btn btn-default btn-sm next-slide">
+                Next
+              </button>
+            </p>
+            <div class="swiper-wrapper timeline">
+              <div class="swiper-slide">
+                <div class="timestamp">
+                  <span class="date">April 2017</span>
+                </div>
+                <div class="status">
+                  <span>This is Title</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="timestamp">
+                  <span class="date">May 2017</span>
+                </div>
+                <div class="status">
+                  <span>This is Second Title</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="timestamp">
+                  <span class="date">June 2017</span>
+                  <!-- Fixed closing <span> -->
+                </div>
+                <div class="status">
+                  <span>This is Third Title</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="timestamp">
+                  <span class="date">July 2017</span>
+                </div>
+                <div class="status">
+                  <span>This is Fourth Title</span>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="month-view view" id="month-view">
+          <div class="swiper-container">
+            <p class="swiper-control">
+              <button type="button" class="btn btn-default btn-sm prev-slide">
+                Prev
+              </button>
+              <button type="button" class="btn btn-default btn-sm next-slide">
+                Next
+              </button>
+            </p>
+            <div class="swiper-wrapper timeline">
+              <div class="swiper-slide">
+                <div class="timestamp">
+                  <span class="date">April 2017</span>
+                </div>
+                <div class="status">
+                  <span>This is Title</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="timestamp">
+                  <span class="date">May 2017</span>
+                </div>
+                <div class="status">
+                  <span>This is Second Title</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="timestamp">
+                  <span class="date">June 2017</span>
+                  <!-- Fixed closing <span> -->
+                </div>
+                <div class="status">
+                  <span>This is Third Title</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="timestamp">
+                  <span class="date">July 2017</span>
+                </div>
+                <div class="status">
+                  <span>This is Fourth Title</span>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
